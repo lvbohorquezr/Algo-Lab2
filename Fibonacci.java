@@ -11,7 +11,7 @@ import java.lang.*;
 
 /**
  *
- * @author juanitobanana
+ * @author LauraB
  */
 public class Fibonacci {
 
