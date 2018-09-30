@@ -1,8 +1,4 @@
-"""
 
-@author: Laura Vanessa Bohórquez Ramírez
-
-"""
 import pylab as pl
 import itertools
 
