@@ -2,7 +2,7 @@
 #include <cstdlib>
 using namespace std;
 
- int fibo2(int n){  //empieza a mandar overflow despues de fibonacci de 46
+ int fibo2(int n){   
         if(n==0){
             return 0;
         }
@@ -11,12 +11,12 @@ using namespace std;
         for(int i = 1;i<n;i++ ){
             b=	(a+b);
             a=(b-a);
-            
-                    
         }
         return b;        
     }
-    short fibo3(short n){//empieza a mandar overflow despues de fibonacci de 23
+
+
+    short fibo3(short n){ 
         if(n==0){
             return 0;
         }
@@ -25,12 +25,12 @@ using namespace std;
         for(short i = 1;i<n;i++ ){
             b=	(short) (a+b);
             a=(short)(b-a);
-            
-                    
         }
         return b;        
     }
-   long fibo4(long n){//empieza a mandar overflow despues de fibonacci de 92
+
+
+   long fibo4(long n){
         if(n==0){
             return 0;
         }
@@ -39,12 +39,12 @@ using namespace std;
         for(long i = 1;i<n;i++ ){
             b=(a+b);
             a=(b-a);
-            
-                    
-        }
+	}
         return b;        
     }
-     long long fibo5(long long n){//empieza a mandar overflow despues de fibonacci de 92
+
+
+     long long fibo5(long long n){
         if(n==0){
             return 0;
         }
@@ -53,19 +53,19 @@ using namespace std;
         for(long long i = 1;i<n;i++ ){
             b=	a+b;
             a=b-a;
-            
-                    
-        }
+         }
         return b;        
     }
  
+
+
 int main()
 {
 	
-    int a;
-    short b;
-    long c;
-    long long d;
+    int a; //overflow después de fibonacci de 46
+    short b; // overflow después de fibonacci de 23
+    long c; // overflow después de fibonacci de 92
+    long long d; // overflow después de fibonacci de 92
   
     cin>> a;
     cin>> b;
